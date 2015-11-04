@@ -3,13 +3,11 @@ import java.net.URISyntaxException;
 
 public class mM {
     public void change() throws URISyntaxException {
-        BufferedReader br = null;
-
         try {
 
             String str;
 
-            br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/KLSadd.tex")));
+            BufferedReader br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/KLSadd.tex")));
             PrintStream out = new PrintStream(new FileOutputStream("output.tex"));
             System.setOut(out);
             while ((str = br.readLine()) != null) {
@@ -33,12 +31,6 @@ public class mM {
 
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                if (br != null)br.close();
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
         }
     }
 

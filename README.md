@@ -1,4 +1,4 @@
-A simple Java application with Apache Maven that takes a .tex file as input 
+A simple Java application with Apache Maven that takes a .tex file as input
 and changes each 'm' to 'M' and every 'M' to 'm' and outputs the result
 in a new file.
 

@@ -12,8 +12,8 @@
     </dependency>
    </dependencies>
 
-    <groupId>com.jetbrains</groupId>
-    <artifactId>MmApp</artifactId>
+    <groupId>com.ahmednader10</groupId>
+    <artifactId>m_capital_small_app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
