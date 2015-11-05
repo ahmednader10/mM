@@ -9,9 +9,13 @@ public class mM {
             br = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/KLSadd.tex")));
             PrintStream out = new PrintStream(new FileOutputStream("output.tex"));
             System.setOut(out);
-            while ((str = br.readLine()) != null) {
+            str = br.readLine();
+            while (str != null) {
                 mM(str);
-                System.out.println();
+                str=br.readLine();
+                if(str != null) {
+                    System.out.println();
+                }
             }
         } else {
             mM(x);
