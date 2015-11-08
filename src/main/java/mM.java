@@ -47,8 +47,7 @@ public class mM {
 
     public static void main(String[]args) throws  IOException, URISyntaxException {
         mM x= new mM();
-       // x.change(null);
-        System.out.println(args[0]);
+        x.change(null);
 
     }
 }
