@@ -16,5 +16,33 @@
     <artifactId>m_capital_small_app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <argumentA>defaultA</argumentA>
+        <argumentB>defaultB</argumentB>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <executable>java</executable>
+                    <arguments>
+                        <argument>-Djava.library.path=${project.build.directory}/lib</argument>
+                        <argument>-classpath</argument>
+                        <classpath />
+                        <argument>mM</argument>
+                        <argument>-a</argument>
+                        <argument>${argumentA}</argument>
+                        <argument>-b</argument>
+                        <argument>${argumentB}</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
 
 </project>
